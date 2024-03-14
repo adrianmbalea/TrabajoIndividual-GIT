@@ -6,3 +6,9 @@ git add .
 
 # Confirmar los cambios en el repositorio con una descripcion
 git commit -m "Subidos estructura inicial junto a plantillas en blanco"
+
+# Etiquetar la versión inicial como "R1"
+git tag -a R1 -m "Versión inicial"
+
+# Crear y cambiar a la rama "Mejoras"
+git checkout -b Mejoras
