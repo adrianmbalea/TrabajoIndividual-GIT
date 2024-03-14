@@ -1,0 +1,8 @@
+# Comando para iniciar un nuevo repositorio git en el directorio actual
+git init .
+
+# Añadir todos los archivos y cambios al área de preparación
+git add .
+
+# Confirmar los cambios en el repositorio con una descripcion
+git commit -m "Subidos estructura inicial junto a plantillas en blanco"
