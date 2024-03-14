@@ -54,3 +54,9 @@ git commit -m "Agregadas las nuevas plantillas"
 
 # Etiquetar esta versión como "R3"
 git tag -a R3 -m "Versión final"
+
+# Push la rama principal y los tags a GitHub
+git push origin master --tags
+
+# Asegurarse de que la rama esta actualizada
+git pull origin main
