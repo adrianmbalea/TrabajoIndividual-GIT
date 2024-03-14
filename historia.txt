@@ -12,3 +12,45 @@ git tag -a R1 -m "Versión inicial"
 
 # Crear y cambiar a la rama "Mejoras"
 git checkout -b Mejoras
+
+# Añadir todos los archivos y cambios al área de preparación
+git add .
+
+# Confirmar los cambios en la rama "Mejoras"
+git commit -m "Agregadas propuestas de mejora y modificado proceso de control de cambios"
+
+# Cambiar a rama master
+git checkout master
+
+# Fundir la rama "Mejoras" con la rama master
+git merge Mejoras
+
+# Eliminar la rama "Mejoras"
+git branch -d Mejoras
+
+# Añadir todos los archivos y cambios al área de preparación
+git add .
+
+# Confirmar los cambios
+git commit -m "Eliminado documento de propuestas de mejora"
+
+# Etiquetar esta versión como "R2"
+git tag -a R2 -m "Version 2, con rama Mejoras fusionada"
+
+# Añadir todos los archivos y cambios al área de preparación
+git add .
+
+# Confirmar los cambios
+git commit -m "Modificado documento descripcion de control de cambios"
+
+# Volver al estado anterior "R2"
+git reset --hard R2
+
+# Añadir todos los archivos y cambios al área de preparación
+git add .
+
+# Confirmar los cambios
+git commit -m "Agregadas las nuevas plantillas"
+
+# Etiquetar esta versión como "R3"
+git tag -a R3 -m "Versión final"
